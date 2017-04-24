@@ -1,6 +1,6 @@
 {
   "name": "koa-hystrix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The koa middleware of hystrix-dashboard.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/node-cloud/koa-hystrix/issues"
   },
-  "homepage": "https://github.com/node-cloud/koa-hystrix#readme"
+  "homepage": "https://github.com/node-cloud/koa-hystrix#readme",
+  "dependencies": {
+    "brakes": "git+https://github.com/node-cloud/brakes.git"
+  }
 }

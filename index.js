@@ -1,14 +1,12 @@
 var os = require('os');
+var Brakes = require('brakes');
+
+const globalStats = Brakes.getGlobalStats();
 
 module.exports = function (options) {
     options = options || {};
 
     var url = options.url || '/hystrix.stream';
-    var globalStats = options.globalStats;
-
-    if (!globalStats || !globalStats.getHystrixStream) {
-        throw new Error('The globalStats options is invalid.');
-    }
 
     return function (ctx, next) {
         if (url === ctx.url) {
