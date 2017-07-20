@@ -1,4 +1,4 @@
-# koa-consul
+# koa-hystrix
 
 This middleware depends on [brakes](https://github.com/node-cloud/brakes), it will set a /hystrix.stream route as default. You can use hystrix-dashboard to get the circuit's status.
 
@@ -15,6 +15,6 @@ app.use(KoaHystrix());
 
 ## API
 
-### KoaConsul(options)
+### KoaHystrix(options)
 
-* options.url 
+* options.url //default is "/hystrix.stream"
