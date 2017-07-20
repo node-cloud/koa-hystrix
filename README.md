@@ -17,4 +17,4 @@ app.use(KoaHystrix());
 
 ### KoaHystrix(options)
 
-* options.url //default is "/hystrix.stream"
+* options.url default is "/hystrix.stream"
